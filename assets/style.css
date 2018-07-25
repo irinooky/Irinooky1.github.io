@@ -1,12 +1,19 @@
 body {
   background: lightsalmon;
   font-family: system-ui, sans-serif;
+  font-size: 20px;
+  margin: 2em;
+}
+
+img {
+  max-width: 100%;
 }
 
 nav {
   background-color: rgba(255,255,255,0.5);
   display: flex;
   flex-direction: row;
+  border-radius: 8px;
 
 }
 
@@ -14,6 +21,7 @@ nav a {
     color: black;
     padding: 20px;
     text-decoration: none;
+    border-radius: 6px;
     transition: background-color 0.4s;
 }
 
@@ -23,4 +31,25 @@ nav a:hover{
 
 nav a.active {
   background-color: white
+}
+
+.cardgroup {
+  display: flex;
+  margin-left: -20px;
+  margin-right: -20px;
+}
+
+.card {
+  background: rgba(255,255,255,0.5);
+  border-radius: 8px;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.5);
+  padding: 20px;
+  border: solid 10px white;
+  margin: 20px;
+  flex-basis: 1;
+  transition: box-shadow 1s, transform 1s;
+}
+.card:hover{
+  box-shadow: 0 1px 4px rgba(0,0,0,1);
+  transform: scale(1.05);
 }
