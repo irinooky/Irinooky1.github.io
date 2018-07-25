@@ -1,0 +1,19 @@
+body {
+  background: lightsalmon;
+  font-family: system-ui, sans-serif;
+}
+
+nav {
+  background-color: skyblue;
+  display: flex;
+  flex-direction: row;
+
+}
+
+nav a {
+    padding: 20px;
+}
+
+nav a.active {
+  background-color: papayawhip
+}
