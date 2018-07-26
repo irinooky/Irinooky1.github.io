@@ -2,7 +2,7 @@ body {
   background: lightsalmon;
   font-family: system-ui, sans-serif;
   font-size: 20px;
-  margin: 2em;
+  margin: 1em;
 }
 
 img {
@@ -67,6 +67,7 @@ nav a.active:hover {
 @media (min-width: 500px){
   body{
     background: lightyellow;
+      margin: 2em;
   }
 }
 
@@ -75,6 +76,7 @@ nav a.active:hover {
   body {
     background: lightblue;
     display: flex;
+      margin: 2em;
   }
 
 nav {
