@@ -26,17 +26,25 @@ nav a {
 }
 
 nav a:hover{
-  background: rgba(255,255,255,0.4);
+  background: rgba(700,700,200,0.4);
+  transform: scale(1.05);
 }
 
 nav a.active {
   background-color: white
+
+}
+
+nav a.active:hover {
+
 }
 
 .cardgroup {
   display: flex;
+  flex-direction: column;
   margin-left: -20px;
   margin-right: -20px;
+
 }
 
 .card {
@@ -49,7 +57,33 @@ nav a.active {
   flex-basis: 1;
   transition: box-shadow 1s, transform 1s;
 }
+
+
 .card:hover{
   box-shadow: 0 1px 4px rgba(0,0,0,1);
   transform: scale(1.05);
+}
+
+@media (min-width: 500px){
+  body{
+    background: lightyellow;
+  }
+}
+
+@media (min-width: 820px) {
+
+  body {
+    background: lightblue;
+    display: flex;
+  }
+
+nav {
+  flex-direction: column;
+  margin-right: 20;
+}
+
+  .cardgroup {
+    flex-direction: row;
+  }
+
 }
